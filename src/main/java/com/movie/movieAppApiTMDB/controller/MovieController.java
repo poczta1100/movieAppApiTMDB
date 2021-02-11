@@ -1,6 +1,7 @@
 package com.movie.movieAppApiTMDB.controller;
 
 
+import com.movie.movieAppApiTMDB.model.MovieDto;
 import com.movie.movieAppApiTMDB.service.MovieService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -18,18 +19,16 @@ import java.util.List;
 @Slf4j
 public class MovieController {
 
-    @Autowired
-    public MovieService movieService;
+    //@Autowired
+    private final MovieService movieService;
 
     @GetMapping("/test")
-    public String searchTest(){
-        //movieService.getMovieWebClientResponse();
+    public MovieDto searchTest(){
         return movieService.getMovieWebClientResponse("");
     }
 
     @GetMapping("/test/{movie_input_text}")
-    public String searchMovie(@PathVariable String movie_input_text){
-        //movieService.getMovieWebClientResponse();
+    public MovieDto searchMovie(@PathVariable String movie_input_text){
         return movieService.getMovieWebClientResponse(movie_input_text);
     }
 

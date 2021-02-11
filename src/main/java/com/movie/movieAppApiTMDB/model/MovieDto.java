@@ -8,13 +8,17 @@ import lombok.NoArgsConstructor;
 import org.springframework.stereotype.Component;
 
 import java.time.Year;
+import java.util.ArrayList;
+import java.util.List;
 
 @Getter
 @Builder
-@NoArgsConstructor
-@AllArgsConstructor
 public class MovieDto {
-    private String name;
-    private Year yearOfProduction;
-    private double avg_vote;
+    private int amountOfResults;
+    private List<String> movie_title;
+    //private int results_found;
+
+    //private ArrayList<Object> content;
+    //private Year yearOfProduction;
+    //private double avg_vote;
 }
