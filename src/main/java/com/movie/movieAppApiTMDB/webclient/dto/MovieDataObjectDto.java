@@ -10,7 +10,7 @@ import java.util.Map;
 @Getter
 public class MovieDataObjectDto {
 
-    private MovieDataObjectResultsDto results[];
+    private List<MovieDataObjectResultsDto> results;
     private int page;
     private int total_pages;
     private int total_results;

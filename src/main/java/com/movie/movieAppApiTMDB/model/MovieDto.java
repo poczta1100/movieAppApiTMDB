@@ -15,6 +15,7 @@ import java.util.List;
 @Builder
 public class MovieDto {
     private int amountOfResults;
+    private int inputPages;
     private List<String> movie_title;
     //private int results_found;
 
