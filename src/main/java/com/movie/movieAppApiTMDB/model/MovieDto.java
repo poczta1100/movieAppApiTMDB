@@ -14,9 +14,9 @@ import java.util.List;
 @Getter
 @Builder
 public class MovieDto {
-    private int amountOfResults;
-    private int inputPages;
-    private List<String> movie_title;
+    //private int amountOfResults;
+    //private int inputPages;
+    private final List<String> movieTitle;
     //private int results_found;
 
     //private ArrayList<Object> content;

@@ -20,12 +20,5 @@ public class Movie {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String name;
-    private Year yearOfProduction;
-    private double voteAvg;
 
-    public Movie(String name, Year yearOfProduction, double voteAvg) {
-        this.name = name;
-        this.yearOfProduction = yearOfProduction;
-        this.voteAvg = voteAvg;
-    }
 }
